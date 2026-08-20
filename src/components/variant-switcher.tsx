@@ -5,8 +5,8 @@ import { usePathname } from "next/navigation";
 import { LinkButton } from "./link-button";
 
 const variants = [
-  { title: "Minimal Variant", href: "/v1" },
-  { title: "Exact Variant", href: "/v2" },
+  { title: "Variant 1", href: "/v1" },
+  { title: "Variant 2", href: "/v2" },
 ];
 
 export default function VariantSwitcher() {
@@ -21,7 +21,7 @@ export default function VariantSwitcher() {
             href={item.href}
             size="sm"
             variant={isActive ? "default" : "ghost"}
-            className="rounded-full p-6"
+            className="rounded-full py-5 px-6"
           >
             {item.title}
           </LinkButton>

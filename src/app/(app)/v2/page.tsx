@@ -1,31 +1,19 @@
-import QuickStats from "@/components/landing/v2/quick-stats";
-import BringToCampus from "@/components/landing/v2/bring-to-campus";
-import Curriculum from "@/components/landing/v2/curriculum";
-import Hero from "@/components/landing/v2/hero";
-import Programmes from "@/components/landing/v2/programmes";
-import CompanyPrep from "@/components/landing/v2/company-prep";
-import FinalCta from "@/components/landing/v2/final-cta";
-import AiHumanCta from "@/components/landing/v2/ai-human-cta";
-import PracticeDemo from "@/components/landing/v2/practice-demo";
-import DashboardDemo from "@/components/landing/v2/dashboard-demo";
-import Roles from "@/components/landing/v2/roles";
-import Faq from "@/components/landing/v2/faq";
+import BringToCampus from "@/components/v2/landing/sections/bring-to-campus";
+import CompanyPrep from "@/components/v2/landing/sections/company-prep";
+import Hero from "@/components/v2/landing/sections/hero";
+import HowItWorks from "@/components/v2/landing/sections/how-it-works";
+import Programmes from "@/components/v2/landing/sections/programmes";
+import RolePathways from "@/components/v2/landing/sections/role-pathways";
 
 export default function Home() {
   return (
-    <div className="bg-cc-page dark:bg-background">
+    <div>
       <Hero />
-      <QuickStats />
-      <Roles />
-      <Curriculum />
-      <PracticeDemo />
-      <DashboardDemo />
-      <CompanyPrep />
       <Programmes />
-      <AiHumanCta />
+      <HowItWorks />
+      <RolePathways />
+      <CompanyPrep />
       <BringToCampus />
-      <Faq />
-      <FinalCta />
     </div>
   );
 }

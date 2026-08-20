@@ -1,5 +1,5 @@
-import Footer from "@/components/layouts/v1/footer";
-import Navbar from "@/components/layouts/v1/navbar";
+import Footer from "@/components/layouts/footer";
+import Navbar from "@/components/layouts/navbar";
 
 export default function Applayout({ children }: { children: React.ReactNode }) {
   return (

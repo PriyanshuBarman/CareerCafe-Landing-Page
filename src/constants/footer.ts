@@ -1,3 +1,13 @@
+type FooterLink = {
+  title: string;
+  href: string;
+};
+
+type FooterSection = {
+  title: string;
+  links: FooterLink[];
+};
+
 export const FOOTER_SECTIONS = [
   {
     title: "Product",
@@ -144,4 +154,4 @@ export const FOOTER_SECTIONS = [
       },
     ],
   },
-] as const;
+] as const satisfies FooterSection[];
