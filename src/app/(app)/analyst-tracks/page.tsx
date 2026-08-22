@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import type { Metadata } from "next";
 
 import AnalystTracksView from "@/components/analyst-tracks/analyst-tracks-view";
@@ -21,7 +22,9 @@ export default function AnalystTracksPage() {
         </p>
       </div>
 
-      <AnalystTracksView />
+      <Suspense fallback={null}>
+        <AnalystTracksView />
+      </Suspense>
     </section>
   );
 }
