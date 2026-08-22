@@ -1,8 +1,8 @@
 import {
-  File02Icon,
   ChartIcon,
-  Message01Icon,
   DatabaseIcon,
+  File02Icon,
+  Message01Icon,
 } from "@hugeicons/core-free-icons";
 import type { IconSvgObject } from "@hugeicons/core-free-icons/types";
 
@@ -16,7 +16,7 @@ export type CompanyItem = {
   img: string;
   title: string;
   description: string;
-  skills:  CompanySkill[];
+  skills: CompanySkill[];
   features: string[];
 };
 

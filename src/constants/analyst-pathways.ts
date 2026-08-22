@@ -1,5 +1,4 @@
 import {
-  BubbleChatQuestionIcon,
   ChartAnalysisIcon,
   ChartUpIcon,
   CodeXmlIcon,
@@ -20,8 +19,7 @@ type RoleBadge = {
   icon?: IconSvgObject;
 };
 
-export type RolePathwayItem = {
-  variant?: "default" | "sage";
+export type AnalystPathwayItem = {
   icon: IconSvgObject;
   title: string;
   description: string;
@@ -35,6 +33,7 @@ export const ROLES = [
     icon: ChartUpIcon,
     title: "Business Analyst",
     description: "Structure business problems and turn insights into action.",
+    href: "/analyst-tracks?role=business",
     badges: [
       { title: "SQL", icon: DatabaseIcon },
       { title: "Requirements", icon: DashboardSquare02Icon },
@@ -45,6 +44,7 @@ export const ROLES = [
     icon: DatabaseSearchIcon,
     title: "Data Analyst",
     description: "Query, interpret and explain data with clarity.",
+    href: "/analyst-tracks?role=data",
     badges: [
       { title: "SQL", icon: DatabaseIcon },
       { title: "Excel & BI", icon: FileSpreadsheetIcon },
@@ -55,6 +55,7 @@ export const ROLES = [
     icon: CodeXmlIcon,
     title: "Technical Analyst",
     description: "Solve technical problems with practical analyst thinking.",
+    href: "/analyst-tracks?role=technical",
     badges: [
       { title: "SQL", icon: DatabaseIcon },
       { title: "Python", icon: PythonIcon },
@@ -65,19 +66,11 @@ export const ROLES = [
     icon: User03Icon,
     title: "Consulting Analyst",
     description: "Structure recommendations and defend your thinking clearly.",
+    href: "/analyst-tracks?role=consulting",
     badges: [
       { title: "Cases", icon: CodeXmlIcon },
       { title: "Guesstimates", icon: QuestionIcon },
       { title: "Communication", icon: Comment03Icon },
     ],
   },
-  {
-    variant: "sage",
-    icon: BubbleChatQuestionIcon,
-    title: "Not Sure Yet?",
-    description:
-      "Start with a guided path recommendation based on your interests and current stage.",
-    badges: [{ title: "Compare Paths" }, { title: "Guided Choice" }],
-    buttonLabel: "Help Me Choose",
-  },
-] as const satisfies RolePathwayItem[];
+] as const satisfies AnalystPathwayItem[];

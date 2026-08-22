@@ -1,7 +1,8 @@
-import { Item, ItemContent, ItemMedia, ItemTitle } from "@/components/ui/item";
-import { HOW_IT_WORKS_STEPS } from "@/constants/how-it-works";
 import { ArrowRight02Icon, Chart03Icon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
+
+import { Item, ItemContent, ItemMedia, ItemTitle } from "@/components/ui/item";
+import { HOW_IT_WORKS_STEPS } from "@/constants/how-it-works";
 import HowItWorksCard from "../how-it-works-card";
 
 export default function HowItWorks() {

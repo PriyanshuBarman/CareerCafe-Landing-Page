@@ -1,4 +1,6 @@
-import Logo from "@/components/logo";
+import { SidebarLeft01Icon } from "@hugeicons/core-free-icons";
+import { HugeiconsIcon } from "@hugeicons/react";
+
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
@@ -6,8 +8,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { SidebarLeft01Icon } from "@hugeicons/core-free-icons";
-import { HugeiconsIcon } from "@hugeicons/react";
+import Logo from "@/components/logo";
 import NavMenu from "./nav-menu";
 
 export const NavigationSheet = () => {

@@ -1,8 +1,9 @@
-import { Button } from "@/components/ui/button";
-import { COMPANIES } from "@/constants/companies";
-import { cn } from "@/lib/utils";
 import { ArrowRight02Icon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
+
+import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
+import { COMPANIES } from "@/constants/companies";
 
 type CompanyButtonsProps = {
   selectedIndex: number;
@@ -16,14 +17,19 @@ export default function CompanyFilterButtons({
   className,
 }: CompanyButtonsProps) {
   return (
-    <div className={cn("mt-12 flex gap-2 sm:gap-4 overflow-x-auto py-2", className)}>
+    <div
+      className={cn(
+        "mt-12 flex gap-2 overflow-x-auto py-2 sm:gap-4",
+        className,
+      )}
+    >
       {COMPANIES.map((item, index) => (
         <Button
           key={item.title}
           variant="outline"
           onClick={() => onSelectCompany(index)}
           className={cn(
-            "h-auto min-w-max flex-1 shrink-0 gap-2 text-xs font-medium sm:gap-3 sm:rounded-xl sm:text-sm md:py-1",
+            "h-auto min-w-max flex-1 shrink-0 gap-2.5 text-xs font-medium sm:gap-3 sm:rounded-xl sm:text-sm md:py-1",
             selectedIndex === index &&
               "border-cc-sage-500 dark:border-cc-sage-900 sm:border-2",
           )}

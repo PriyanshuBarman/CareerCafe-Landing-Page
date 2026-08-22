@@ -1,9 +1,10 @@
+import { ArrowRight01Icon, CheckIcon } from "@hugeicons/core-free-icons";
+import { HugeiconsIcon } from "@hugeicons/react";
+
+import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import type { ProgrammeItem } from "@/constants/programmes";
-import { cn } from "@/lib/utils";
-import { ArrowUpRight01Icon, CheckIcon } from "@hugeicons/core-free-icons";
-import { HugeiconsIcon } from "@hugeicons/react";
 
 export default function ProgrammeCard({
   programme,
@@ -15,7 +16,7 @@ export default function ProgrammeCard({
   return (
     <Card
       className={cn(
-        "rounded-3xl bg-linear-to-b p-4 md:p-6",
+        "bg-linear-to-b rounded-3xl p-4 md:p-6",
         isSage
           ? "from-cc-sage-100/40 ring-cc-sage-900/30 dark:ring-cc-sage-900/50 via-card to-card dark:from-cc-sage-900/20 dark:via-card dark:to-card"
           : "from-cc-orange/5 via-card ring-primary/30 to-card dark:from-cc-orange/10 dark:via-card dark:to-card",
@@ -25,7 +26,7 @@ export default function ProgrammeCard({
         <div className="flex items-center gap-4">
           <div
             className={cn(
-              "w-fit rounded-full p-4 sm:p-5",
+              "w-fit rounded-full p-4",
               isSage
                 ? "bg-cc-sage-100 dark:bg-cc-sage-900/50"
                 : "bg-primary/20",
@@ -33,9 +34,9 @@ export default function ProgrammeCard({
           >
             <HugeiconsIcon
               icon={programme.icon}
-              strokeWidth={1.5}
+              strokeWidth={1.25}
               className={cn(
-                "size-9 md:size-10",
+                "size-9 md:size-14",
                 isSage ? "text-cc-sage-700" : "text-primary",
               )}
             />
@@ -86,7 +87,7 @@ export default function ProgrammeCard({
         <Button
           variant={isSage ? "ghost" : "default"}
           className={cn(
-            "mt-10 w-full p-5 text-xs rounded-full sm:p-6 sm:text-sm",
+            "mt-10 w-full p-5 text-xs sm:p-6 sm:text-sm",
             isSage
               ? "border-cc-sage-700 dark:text-cc-sage-500 hover:bg-cc-sage-100 text-cc-sage-900 border"
               : "dark:bg-primary/50 dark:text-foreground",
@@ -95,7 +96,7 @@ export default function ProgrammeCard({
           {programme.buttonLabel}
           <HugeiconsIcon
             strokeWidth={2}
-            icon={ArrowUpRight01Icon}
+            icon={ArrowRight01Icon}
             className="size-4 sm:size-5"
           />
         </Button>

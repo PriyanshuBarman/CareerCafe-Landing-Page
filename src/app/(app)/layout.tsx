@@ -1,10 +1,12 @@
-import VariantSwitcher from "@/components/variant-switcher";
+import Footer from "@/components/layouts/footer";
+import Navbar from "@/components/layouts/navbar";
 
 export default function Applayout({ children }: { children: React.ReactNode }) {
   return (
     <div>
-      {children}
-      <VariantSwitcher />
+      <Navbar />
+      <main>{children}</main>
+      <Footer />
     </div>
   );
 }

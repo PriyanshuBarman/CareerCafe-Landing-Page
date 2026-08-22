@@ -1,3 +1,10 @@
+import {
+  ArrowRight01Icon,
+  GoogleGeminiIcon,
+  Timer02Icon,
+} from "@hugeicons/core-free-icons";
+import { HugeiconsIcon } from "@hugeicons/react";
+
 import { Button } from "@/components/ui/button";
 import {
   Item,
@@ -9,12 +16,6 @@ import {
 } from "@/components/ui/item";
 import { Separator } from "@/components/ui/separator";
 import { PROGRAMMES } from "@/constants/programmes";
-import {
-  ArrowRight01Icon,
-  GoogleGeminiIcon,
-  Timer02Icon,
-} from "@hugeicons/core-free-icons";
-import { HugeiconsIcon } from "@hugeicons/react";
 import ProgrammeCard from "../program-card";
 
 export default function Programmes() {

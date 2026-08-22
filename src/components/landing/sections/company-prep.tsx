@@ -1,6 +1,18 @@
 "use client";
 
 import { useState } from "react";
+import {
+  AiMagicIcon,
+  ArrowRightIcon,
+  ArrowUpRightIcon,
+  CheckIcon,
+  CheckmarkCircle02Icon,
+  File02Icon,
+  InformationCircleIcon,
+  UserMultiple02Icon,
+} from "@hugeicons/core-free-icons";
+import { HugeiconsIcon } from "@hugeicons/react";
+
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
@@ -21,17 +33,6 @@ import {
 } from "@/components/ui/item";
 import { COMPANIES } from "@/constants/companies";
 import CompanyFilterButtons from "../company-filter-buttons";
-import {
-  AiMagicIcon,
-  ArrowRightIcon,
-  ArrowUpRightIcon,
-  CheckIcon,
-  CheckmarkCircle02Icon,
-  File02Icon,
-  InformationCircleIcon,
-  UserMultiple02Icon,
-} from "@hugeicons/core-free-icons";
-import { HugeiconsIcon } from "@hugeicons/react";
 
 export default function CompanyPrep() {
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -80,7 +81,7 @@ export default function CompanyPrep() {
               />
 
               <div className="flex flex-col gap-1 sm:gap-2">
-                <CardTitle className="text-md  sm:text-lg md:font-[550] lg:text-xl">
+                <CardTitle className="text-md sm:text-lg md:font-[550] lg:text-xl">
                   {selectedCompany.title}
                 </CardTitle>
                 <CardDescription className="text-xs sm:text-sm">

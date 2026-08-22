@@ -1,3 +1,14 @@
+import { Fragment } from "react";
+import {
+  ArrowUpRight01Icon,
+  BankIcon,
+  CalendarCheckIcon,
+  ChartUpIcon,
+  SecurityCheckIcon,
+  UserMultiple02Icon,
+} from "@hugeicons/core-free-icons";
+import { HugeiconsIcon } from "@hugeicons/react";
+
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -10,16 +21,6 @@ import {
   ItemTitle,
 } from "@/components/ui/item";
 import { Separator } from "@/components/ui/separator";
-import {
-  ArrowUpRight01Icon,
-  BankIcon,
-  CalendarCheckIcon,
-  ChartUpIcon,
-  SecurityCheckIcon,
-  UserMultiple02Icon,
-} from "@hugeicons/core-free-icons";
-import { HugeiconsIcon } from "@hugeicons/react";
-import { Fragment } from "react";
 
 const ITEMS = [
   {
@@ -54,7 +55,7 @@ export default function BringToCampus() {
               CAMPUS EVENTS
             </Badge>
 
-            <h3 className="text-base mt-4 font-medium sm:text-3xl">
+            <h3 className="mt-4 text-base font-medium sm:text-3xl">
               Bring CareerCafe to Your Campus
             </h3>
 
@@ -104,11 +105,11 @@ export default function BringToCampus() {
 
           {/* Col 2 */}
           <div className="flex flex-col items-center justify-center">
-            <div className="rounded-3xl  w-full bg-[#EEE7D5] p-2">
+            <div className="w-full rounded-3xl bg-[#EEE7D5] p-2">
               {/* Image Placeholder */}
               <div className="bg-foreground/50 dark:bg-accent/50 aspect-video rounded-3xl" />
 
-              <div className="flex max-sm:hidden px-4 flex-wrap items-center justify-center gap- py-8 sm:justify-between">
+              <div className="gap- flex flex-wrap items-center justify-center px-4 py-8 max-sm:hidden sm:justify-between">
                 {ITEMS.map((item, index) => (
                   <Fragment key={item.title}>
                     <div className="flex flex-col items-center justify-center gap-2 text-center">
@@ -124,7 +125,10 @@ export default function BringToCampus() {
                       </p>
                     </div>
                     {index < ITEMS.length - 1 && (
-                      <Separator orientation="vertical" className="bg-ring/50" />
+                      <Separator
+                        orientation="vertical"
+                        className="bg-ring/50"
+                      />
                     )}
                   </Fragment>
                 ))}

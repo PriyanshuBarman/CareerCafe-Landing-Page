@@ -1,7 +1,8 @@
-import { LinkButton } from "@/components/link-button";
-import { cn } from "@/lib/utils";
-import { HugeiconsIcon } from "@hugeicons/react";
 import { Coffee02Icon } from "@hugeicons/core-free-icons";
+import { HugeiconsIcon } from "@hugeicons/react";
+
+import { cn } from "@/lib/utils";
+import { LinkButton } from "@/components/link-button";
 
 export default function Logo({ className }: { className?: string }) {
   return (

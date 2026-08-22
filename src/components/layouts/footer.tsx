@@ -1,10 +1,11 @@
-import { Separator } from "@/components/ui/separator";
-import { FOOTER_SECTIONS } from "@/constants/footer";
 import Link from "next/link";
-import Logo from "@/components/logo";
-import { SITE_INFO, SOCIALS } from "@/constants/site";
-import { LinkButton } from "@/components/link-button";
 import { HugeiconsIcon } from "@hugeicons/react";
+
+import { Separator } from "@/components/ui/separator";
+import { LinkButton } from "@/components/link-button";
+import Logo from "@/components/logo";
+import { FOOTER_SECTIONS } from "@/constants/footer";
+import { SITE_INFO, SOCIALS } from "@/constants/site";
 
 export default function Footer() {
   return (

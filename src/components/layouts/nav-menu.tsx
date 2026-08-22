@@ -1,5 +1,6 @@
-import Link from "next/link";
 import type { ComponentProps } from "react";
+import Link from "next/link";
+
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -21,7 +22,7 @@ export default function NavMenu(props: ComponentProps<typeof NavigationMenu>) {
     <NavigationMenu {...props}>
       <NavigationMenuList
         data-orientation={props.orientation}
-        className="gap-3 data-[orientation=vertical]:-ms-2 lg:gap-4 data-[orientation=vertical]:flex-col data-[orientation=vertical]:items-start data-[orientation=vertical]:justify-start"
+        className="gap-3 data-[orientation=vertical]:-ms-2 data-[orientation=vertical]:flex-col data-[orientation=vertical]:items-start data-[orientation=vertical]:justify-start lg:gap-4"
       >
         {MENU_LINKS.map((item) => (
           <NavigationMenuItem key={item.name}>

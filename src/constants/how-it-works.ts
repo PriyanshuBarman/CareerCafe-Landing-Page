@@ -1,7 +1,7 @@
 import {
   BookOpen01Icon,
   Chat01Icon,
-  User03Icon
+  User03Icon,
 } from "@hugeicons/core-free-icons";
 import type { IconSvgObject } from "@hugeicons/core-free-icons/types";
 

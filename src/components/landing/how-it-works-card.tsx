@@ -1,3 +1,7 @@
+import { CheckmarkCircle02Icon } from "@hugeicons/core-free-icons";
+import { HugeiconsIcon } from "@hugeicons/react";
+
+import { cn } from "@/lib/utils";
 import {
   Card,
   CardContent,
@@ -6,9 +10,6 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import type { HowItWorksStep } from "@/constants/how-it-works";
-import { cn } from "@/lib/utils";
-import { CheckmarkCircle02Icon } from "@hugeicons/core-free-icons";
-import { HugeiconsIcon } from "@hugeicons/react";
 
 export default function HowItWorksCard({ step }: { step: HowItWorksStep }) {
   const isSage = step.variant === "sage";
@@ -16,7 +17,7 @@ export default function HowItWorksCard({ step }: { step: HowItWorksStep }) {
   return (
     <Card
       className={cn(
-        "bg-linear-to-b p-6 sm:p-8",
+        "bg-linear-to-b rounded-2xl p-6 sm:p-8",
         isSage
           ? "ring-cc-sage-900/30 dark:ring-cc-sage-900/50"
           : "ring-primary/50",

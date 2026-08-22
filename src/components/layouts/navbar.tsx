@@ -1,6 +1,6 @@
+import { Button } from "@/components/ui/button";
 import Logo from "@/components/logo";
 import ThemeToggle from "@/components/theme-toggle";
-import { Button } from "@/components/ui/button";
 import NavMenu from "./nav-menu";
 import { NavigationSheet } from "./navigation-sheet";
 
@@ -16,7 +16,7 @@ export default function Navbar() {
         <NavMenu className="hidden lg:block" />
 
         <div className="flex items-center gap-3">
-          <ThemeToggle enableHotKey className="sm:rounded-full sm:p-5" />
+          <ThemeToggle enableHotKey className="sm:rounded-full bg-transparent sm:p-5" />
 
           <Button variant="ghost" className="px-4 py-5 max-sm:hidden">
             Login

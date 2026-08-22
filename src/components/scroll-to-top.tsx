@@ -1,12 +1,11 @@
 "use client";
 
-import { AnimatePresence, motion } from "motion/react";
 import { useEffect, useState } from "react";
-
-import { cn } from "@/lib/utils";
-
 import { ArrowUp02Icon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
+import { AnimatePresence, motion } from "motion/react";
+
+import { cn } from "@/lib/utils";
 import { Button } from "./ui/button";
 
 type ScrollToTopProps = {
