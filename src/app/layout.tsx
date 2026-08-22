@@ -28,10 +28,6 @@ export const metadata: Metadata = {
   title: SITE_INFO.name,
   description: SITE_INFO.description,
   keywords: SITE_INFO.keywords,
-  authors: {
-    name: "Priyanshu Barman",
-    url: SITE_INFO.url,
-  },
   openGraph: {
     type: "website",
     locale: "en_US",

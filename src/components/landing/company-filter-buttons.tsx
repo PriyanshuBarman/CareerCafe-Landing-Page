@@ -18,10 +18,7 @@ export default function CompanyFilterButtons({
 }: CompanyButtonsProps) {
   return (
     <div
-      className={cn(
-        "mt-12 flex gap-2 overflow-x-auto py-2 sm:gap-4",
-        className,
-      )}
+      className={cn("mt-12 flex gap-2 overflow-x-auto p-2 sm:gap-4", className)}
     >
       {COMPANIES.map((item, index) => (
         <Button
@@ -31,7 +28,7 @@ export default function CompanyFilterButtons({
           className={cn(
             "h-auto min-w-max flex-1 shrink-0 gap-2.5 text-xs font-medium sm:gap-3 sm:rounded-xl sm:text-sm md:py-1",
             selectedIndex === index &&
-              "border-cc-sage-500 dark:border-cc-sage-900 sm:border-2",
+              "ring-cc-sage-500 dark:ring-cc-sage-900 ring sm:ring-2",
           )}
         >
           <img

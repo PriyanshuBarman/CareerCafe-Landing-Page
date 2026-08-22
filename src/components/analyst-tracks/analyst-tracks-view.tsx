@@ -26,7 +26,7 @@ export default function AnalystTracksView() {
 
     const params = new URLSearchParams(searchParams.toString());
     params.set("role", roleId);
-    router.replace(`${pathname}?${params.toString()}`);
+    router.replace(`${pathname}?${params.toString()}`, { scroll: false });
   };
 
   return (
